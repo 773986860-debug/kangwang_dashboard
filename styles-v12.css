@@ -1,0 +1,35 @@
+.business-diagnostics{margin-top:18px;padding:24px;border:1px solid #dfe9e3;background:linear-gradient(180deg,#fff 0%,#fbfdfb 100%)}
+.diagnostics-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:16px}
+.diagnostics-head h3{margin:5px 0 0;font-size:24px;color:#10281d}
+.diagnostics-scope{font-size:13px;color:#587064;background:#eef5f0;border-radius:999px;padding:7px 11px;white-space:nowrap}
+.diagnostics-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.diagnostic-card{display:flex;flex-direction:column;gap:5px;padding:15px 16px;border:1px solid #e1eae5;border-radius:14px;background:#fff}
+.diagnostic-card>span{font-size:12px;color:#687c71}
+.diagnostic-card>strong{font-size:21px;color:#10281d;line-height:1.25}
+.diagnostic-card>small{font-size:12px;color:#687c71}.diagnostic-card>small.up{color:#08744a}.diagnostic-card>small.down{color:#c23a32}
+.attention-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.attention-item{display:grid;grid-template-columns:30px minmax(0,1fr);gap:11px;padding:15px;border:1px solid #e4e9e6;border-left-width:4px;border-radius:12px;background:#fff}
+.attention-item.danger{border-left-color:#d8463c;background:#fffafa}.attention-item.warning{border-left-color:#e39b27;background:#fffdf7}
+.attention-icon{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;font-weight:800;font-size:14px;background:#f4e5e3;color:#b8322a}
+.attention-item.warning .attention-icon{background:#faedcf;color:#a66709}
+.attention-title{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;color:#183126;font-size:15px;line-height:1.4}
+.attention-title span{flex:none;padding:3px 7px;border-radius:999px;background:#f7e8e6;color:#b8322a;font-size:11px;font-weight:700}
+.attention-item.warning .attention-title span{background:#fbefd6;color:#98610b}
+.attention-item p{margin:7px 0 5px;color:#455b50;font-size:13px;line-height:1.55}.attention-item small{color:#809087;font-size:11px}
+.attention-empty{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding:18px;border:1px solid #d9e9df;border-radius:12px;background:#f5fbf7;color:#175f3d}
+.attention-empty>span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#dcefe3;font-weight:800}.attention-empty p{margin:4px 0 0;color:#65796e;font-size:13px}
+.diagnostics-note{margin:13px 2px 0;color:#84938b;font-size:11px;line-height:1.55}
+@media(max-width:800px){.business-diagnostics{padding:18px}.diagnostics-head{display:block}.diagnostics-scope{display:inline-block;margin-top:10px;white-space:normal}.diagnostics-summary,.attention-list{grid-template-columns:1fr}.diagnostic-card>strong{font-size:19px}}
+
+.kpi-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.fee-ratio-card .kpi-icon{font-style:normal;font-weight:800}
+@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-card:last-child{grid-column:1/-1}}
+@media print{.kpi-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+
+.detail-kpis{grid-template-columns:repeat(7,minmax(0,1fr))}
+@media(max-width:1100px){.detail-kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.detail-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.comparison-mode{display:flex;align-items:center;gap:8px;margin-left:auto}.comparison-mode>span{font-size:10px;color:var(--muted);white-space:nowrap}.comparison-mode>div{display:flex;background:#eef2ee;padding:3px;border-radius:9px}.comparison-mode button{border:0;background:transparent;padding:7px 11px;border-radius:7px;color:var(--muted);font:inherit;font-size:12px;font-weight:700;cursor:pointer}.comparison-mode button.active{background:#145c3e;color:#fff}
+@media(max-width:1000px){.comparison-mode{order:3;margin-left:0}}
+@media(max-width:720px){.comparison-mode{width:100%;justify-content:space-between}.comparison-mode>div{flex:1}.comparison-mode button{width:50%}}
